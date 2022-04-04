@@ -1,12 +1,13 @@
 language: node_js
 node_js:
-- node
+  - node
 sudo: false
 script:
-- npm test
+  - npm test
 deploy:
   provider: heroku
-  api_key:
-    secure: NxKfpHoPCS77rdkMevWOvRtcbXpg1geoy0w1ZJCwLBvuRBSpu9Oh0XMuY76QaxjtRwxSZANyb7wJDJfKuzqEK7kKEWPQGPsz45S1xcGR/hXqZL3cMHe18liu3M9Fl4ggcOP5Fflj/bOrcvocAAslcjGS0qF08p/imB74eLbnYNRmcg2FbdWJmry9f8gVZ2Oqq4MvItGsd157Sxnc3WCkElkOmkla+j4du8uSsYPd//ph83L5h0IcoObUDY3DZgQFQP91ZglpR6//fOZsqQuKq2+7m9p9joKT0nXKgNTe59HGwJs88vtn5V7TW16jq1sGnXodJ4SJuE0f38OLMD02UAUTwGVz1RFFea2vl/+BHhH4BbOfJxpFSDuFShE1KjDBo67hYPpForlTHjlk8sBRku4cgv/vLvTkmyC/TuckC1aBYqTCvSDut9UC7ry8LB5YrPvEp2qur5fzOm46f4TrahYOPLbjUUF4QbfiNIY9CXJb2RiImS6oMPfYw+hyMwZNgjI6J8+DYtM24Gl8Hu+Xhbsk4f/gqErpzJ8BmwwEDARP67UhJzjan/KcwwdJYWHkjENefUGNCA8RfsHIKoHWDLJNhkcfMC1hnVqiU5xR0HfxY6kLi+f5gfYl2KWy+8//vfYhD3ZKlrVAsuKVnJbPiNeGzjH+Wepw+itUP8q+qjY=
+  api_key: WaCUVnz77EaUfH5mvJh0a/yX86FDeqAFq2wfxH1CVsC/8CxNkt/DB1zMrO3xLt3+4zh0Z36LdSQM/Iqfhv+W3HuyKII78VyqszY/v1VU5Ui+3eNc+cWaM9dSu92s/KAIIIvSprpL/4eaA2sKYJS2axRR2URJAyIleuqoXxLy5KqFZfQYwo8Z4CTrB751vaWziUFR+Fm8u130/PMuHeeXwlDbYB2Zi6LK/w+9vLG1QscCVHqI+dS8XXmy/potlFijSJ2vRWBfE6Uw7TzuHLhYxgpY3XJV4ermaOpx13bxRfWO7FNX/+eB4vi57EYnFbdvtfYbs7CxrksVrnNqJn0legjqoPJkD/lFtD2mksmQD8muq9rGI9xmswQit5WzVipOqF7dlJBJKUnIK40r5ER6+agJFL1RObAIIY4h7BljMcmheDIUb8YJVe31M4JcEMtA3tP8FRdotXD4TWCK/nUZqroSTXvwJ+2Uc+2iXBttnO0u3rP5hzTc3ukAA9P6e2WnmZhbisGFvishXz7f+BXdKOll+xltnip1VKjpg7fBK6p//RYcE9NciLn19m0rnaOLBDgSdr7AC6HMQUwvOlJOmIDHS7ikKyg3JxJGUi4jQR8b1qhcH9EG9p/c9iTU/hD3zOYpnBoqcVJuvGfsAIPibLFnNAb8Djtch9XKTYIGZlw=
+    secure:
   app: devops--pipeline
-  edge: true
+  on:
+      repo: MiguelRPG/DevOpsLab-Pipeline
